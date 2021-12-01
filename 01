@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+   <style>fieldset{border: 3px solid #fff;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+legend{ color : #556B2F;
+        font-family : verdana;
+        font-size : 300%;
+      }
+
+h1 { color : #556B2F;
+        font-family : verdana;
+        font-size : 100%;
+      }
+
+body{
+    height: 100vh;
+    background-color: #F0F8FF;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+label { color : #556B2F;
+        font-family : verdana;
+        font-size : 100%;
+      }
+
+input[type=text], select {
+  width: 100%;
+  color :black;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=textarea], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  color : grey: ;
+  font-size : 75%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 750px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+</style>
+<head>
+
+</head>
+<body>
+ 
+   
+    <title>Biodata</title>   <div>
+    <form>
+       
+        <fieldset>
+        <center> <legend>Biodata Pribadi</legend> </center>
+        <center> <h1>Mohon diisi dengan benar</h1> </center>
+        <br>
+        <br>
+        <p>
+            <input type="text" name="nama" placeholder="Nama Lengkap" color = "black"/>
+        </p>
+
+        <p>
+            <label>Tanggal Lahir</label>
+            <input type="date" placeholder = "Pilih Tanggal Lahir" name="ttl" id="ttl">
+        </p>
+
+        <p>
+            <input type="textarea" name="alamat" placeholder="Alamat" />
+        </p>
+        <p>
+            <input type="email" name="email" placeholder="Alamat Email" />
+        </p>
+
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jeniskelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jeniskelamin" value="perempuan" /> Perempuan</label>
+        </p>
+
+        <p>
+    
+            <select name="agama">
+                <option selected disabled value="">Agama</option>               
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option> 
+            </select>
+        </p>
+
+       <p>
+            <select name="pendidikan">
+                <option selected disabled value="">Pendidikan Terakhir</option>
+                <option value="sd">SD</option>
+                <option value="smp">SMP</option>
+                <option value="sma">SMA</option>
+                <option value="sarjana">S1</option> 
+                <option value="magister">S2</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" name="submit" value="Submit" />
+        </p>
+        </fieldset>
+
+    </form>
+    </div>
+</body>
+</html>
